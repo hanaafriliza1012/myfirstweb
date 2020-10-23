@@ -1,3 +1,11 @@
 <h3>Biodata</h3>
-<td><?= $nama ?></td>
-<h3><?= $npm ?></td>
+<table>
+    <tr>
+        <td>
+            Hana Afriliza
+        </td>
+        <td>
+            1817051012
+        </td>
+    </tr>
+</table>
