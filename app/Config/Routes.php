@@ -39,7 +39,14 @@ $routes->get('/hana', function () {
 	echo view("Mahasiswa/footer");
 });
 $routes->get('/coba/(:any)/(:num)', 'Helloworld::index/$1/$2');
+$routes->get('/login', 'WebController::index');
+$routes->get('/register', 'WebController::register');
+$routes->get('/admin', 'WebController::admin');
+$routes->get('/user', 'WebController::user');
+$routes->get('/detail', 'WebController::detail');
+$routes->get('/about', 'WebController::about');
 
+$routes->get('/kopi/(:segment)', 'KopiController::detail/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
