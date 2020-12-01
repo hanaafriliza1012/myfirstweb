@@ -16,10 +16,14 @@
                             <p class="card-text"><b>Berat : </b> <?= $kopi['berat']; ?></p>
                             <p class="card-text"><b>Harga : </b> <?= $kopi['harga']; ?></p>
                             <p class="card-text"><b>Kadaluarsa : </b> <?= $kopi['kadaluarsa']; ?></p>
-                            <p class="card-text"><b>Umur Simpan : </b> <?= $kopi['umur simpan']; ?></p>
+                            <p class="card-text"><b>Umur Simpan : </b> <?= $kopi['umur_simpan']; ?></p>
 
-                            <a href="" class="btn btn-warning">Edit</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                            <a href="/KopiController/edit/<?= $kopi['slug']; ?>" class="btn btn-warning">Edit</a>
+
+                            <form action="/KopiController/delete/<?= $kopi['id']; ?>" method="post" class="d-inline">
+                                <input type="hidden" name="method" value="DELETE">
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin?');">Delete</button>
+                            </form>
 
                             <br><br>
                             <a href="/KopiController">Kembali ke daftar kopi</a>

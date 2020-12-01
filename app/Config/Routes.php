@@ -46,7 +46,10 @@ $routes->get('/user', 'WebController::user');
 $routes->get('/detail', 'WebController::detail');
 $routes->get('/about', 'WebController::about');
 
-$routes->get('/kopi/(:segment)', 'KopiController::detail/$1');
+$routes->get('/kopi/create', 'KopiController::create');
+$routes->get('/kopi/edit(:segmen)', 'KopiController::edit/$1');
+$routes->get('/kopi/(:num)', 'KopiController::delete/$1');
+$routes->get('/kopi/(:any)', 'KopiController::detail/$1');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class KopiModel extends Model
 {
     protected $table = 'kopi';
+    protected $allowedFields = ['gambar', 'jenis', 'berat', 'harga', 'kadaluarsa', 'umur_simpan', 'slug'];
 
     public function getKopiController($slug = false)
     {

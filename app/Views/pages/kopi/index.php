@@ -4,11 +4,17 @@
 <div class="container">
     <div class="row">
         <div class="col">
+            <a href="/KopiController/create" class="btn btn-primary mt-3"> Tambah Data</a>
             <h1 class="mt-2">Daftar Kopi</h1>
+            <?php if (session()->getFlashdata('pesan')) : ?>
+                <div class="alert alert-success" role="alert">
+                    <?= session()->getFlashdata('pesan'); ?>
+                </div>
+            <?php endif; ?>
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">No.</th>
                         <th scope="col">Gambar</th>
                         <th scope="col">Jenis</th>
                         <th scope="col">Aksi</th>
