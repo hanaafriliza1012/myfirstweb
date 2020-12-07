@@ -38,18 +38,22 @@ $routes->get('/hana', function () {
 	echo view("Mahasiswa/index");
 	echo view("Mahasiswa/footer");
 });
-$routes->get('/coba/(:any)/(:num)', 'Helloworld::index/$1/$2');
-$routes->get('/login', 'WebController::index');
-$routes->get('/register', 'WebController::register');
-$routes->get('/admin', 'WebController::admin');
-$routes->get('/user', 'WebController::user');
-$routes->get('/detail', 'WebController::detail');
-$routes->get('/about', 'WebController::about');
+//$routes->get('/coba/(:any)/(:num)', 'Helloworld::index/$1/$2');
+//$routes->get('/login', 'WebController::index');
+//$routes->get('/register', 'WebController::register');
+//$routes->get('/admin', 'WebController::admin');
+//$routes->get('/user', 'WebController::user');
+//$routes->get('/detail', 'WebController::detail');
+//$routes->get('/about', 'WebController::about');
 
 $routes->get('/kopi/create', 'KopiController::create');
 $routes->get('/kopi/edit(:segmen)', 'KopiController::edit/$1');
 $routes->get('/kopi/(:num)', 'KopiController::delete/$1');
 $routes->get('/kopi/(:any)', 'KopiController::detail/$1');
+
+//proses login
+//$routes->get('/', 'Home::index');
+//$routes->get('/home', 'PagesController::index', ['filter' => 'auth']);
 /**
  * --------------------------------------------------------------------
  * Additional Routing

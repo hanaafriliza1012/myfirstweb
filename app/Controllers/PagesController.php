@@ -10,6 +10,9 @@ class PagesController extends BaseController
             'title' => 'Home | KopiKu'
         ];
         return view('pages/home', $data);
+        //tambahan
+        //$session = session();
+        //echo "Welcome back, " . $session->get('email');
     }
     public function about()
     {
@@ -27,5 +30,4 @@ class PagesController extends BaseController
     }
 
     //--------------------------------------------------------------------
-
 }
