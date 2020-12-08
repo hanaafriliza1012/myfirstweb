@@ -52,7 +52,7 @@ class KopiController extends BaseController
             'berat' => $this->request->getVar('berat'),
             'harga' => $this->request->getVar('harga'),
             'kadaluarsa' => $this->request->getVar('kadaluarsa'),
-            'umur simpan' => $this->request->getVar('umur simpan'),
+            'umur_simpan' => $this->request->getVar('umur_simpan'),
             'slug' => $slug
         ]);
 
@@ -86,7 +86,7 @@ class KopiController extends BaseController
             'berat' => $this->request->getVar('berat'),
             'harga' => $this->request->getVar('harga'),
             'kadaluarsa' => $this->request->getVar('kadaluarsa'),
-            'umur simpan' => $this->request->getVar('umur simpan'),
+            'umur_simpan' => $this->request->getVar('umur_simpan'),
             'slug' => $slug
         ]);
 

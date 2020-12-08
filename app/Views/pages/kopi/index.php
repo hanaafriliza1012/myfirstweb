@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col">
                 <a href="/KopiController/create" class="btn btn-primary mt-3"> Tambah Data</a>
-                <h1 class="mt-2">Daftar Kopi</h1>
+                <h1 class="text-white">Daftar Kopi</h1>
                 <?php if (session()->getFlashdata('pesan')) : ?>
                     <div class="alert alert-success" role="alert">
                         <?= session()->getFlashdata('pesan'); ?>
@@ -14,14 +14,14 @@
                 <?php endif; ?>
                 <table class="table">
                     <thead>
-                        <tr>
+                        <tr class="text-white">
                             <th scope="col">No.</th>
                             <th scope="col">Gambar</th>
                             <th scope="col">Jenis</th>
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-white">
                         <?php $i = 1; ?>
                         <?php foreach ($kopi as $k) : ?>
                             <tr>
